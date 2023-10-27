@@ -1,5 +1,10 @@
-public class Qronos {
+import javax.swing.JFrame;
+ 
+public class Qronos
+{
     public static void main(String[] args) {
-        System.out.println("Qronos will be running in here someday.");
+        JFrame mainFrame = new JFrame("Qronos Timekeeper");
+        mainFrame.setSize(600, 400);
+        mainFrame.setVisible(true);
     }
 }
