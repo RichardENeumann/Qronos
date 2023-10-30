@@ -9,19 +9,28 @@ public class Qronos {
     public static void main(String[] args) {
         JFrame mainFrame = new JFrame("Qronos Timekeeper");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.setBounds(100, 150, 600, 400);
-        // mainFrame.add(new JLabel("Select Projects"));
-        // mainFrame.add(new JLabel("Active Projects"));
+        mainFrame.setBounds(200, 250, 640, 480);
+        
         mainFrame.setVisible(true);
 
         JPanel mainContent = new JPanel();
-        mainContent.setBorder(new EmptyBorder(5, 5, 5, 5));
         mainFrame.setContentPane(mainContent);
+        mainContent.setBorder(new EmptyBorder(5, 5, 5, 5));
         mainContent.setLayout(null);
 
-        JTextField projectName = new JTextField();
-        projectName.setFont(new Font("Tahoma", Font.PLAIN, 12));
-        projectName.setBounds(20, 46, 190, 20);
-        mainContent.add(projectName);
+        JLabel lbApplicationTitle = new JLabel("A work-time logging application for multiple Projects");  
+        mainContent.add(lbApplicationTitle);
+        lbApplicationTitle.setBounds(128, 24, 400, 24);
+        
+        JLabel lbSelectProjects = new JLabel("Select Projects");
+        mainContent.add(lbSelectProjects);
+        lbSelectProjects.setBounds(100, 64, 128, 18);
+        
+        JLabel lbActiveProjects = new JLabel("Active Projects");
+        mainContent.add(lbActiveProjects);
+        lbActiveProjects.setBounds(420, 64, 128, 18);
+        
+        
+        
     }
 }
