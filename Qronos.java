@@ -4,6 +4,9 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 import java.awt.List;
 
 public class Qronos extends JFrame {
@@ -49,10 +52,29 @@ public class Qronos extends JFrame {
         });
 
         setVisible(true);
-        
+    }
+    private static void loadStorageFile(String fileName) {
+        try {
+            File openedFile = new File(fileName);
+            Scanner fileScanner = new Scanner(openedFile);
+           
+            //Debugging info
+            System.out.println("File name: " + openedFile.getName());
+            System.out.println("Absolute path: " + openedFile.getAbsolutePath());
+            System.out.println("File size in bytes " + openedFile.length());
+            
+            while (fileScanner.hasNextLine()) {
+                System.out.println(fileScanner.nextLine());
+            }
+            fileScanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File Error");
+            e.printStackTrace();
+        } 
     }
 
     public static void main(String... args) {
         Qronos mainFrame = new Qronos();
+        loadStorageFile("storage.xml");
     }
 }

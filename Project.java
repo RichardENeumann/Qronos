@@ -20,14 +20,14 @@ public class Project {
     public int getTimeSpent() {
         return timeSpent;
     }
-    public void setStartingTime(Timestamp saTime) {
-        this.startingTime = saTime;
+    public void setStartingTime(Timestamp staTime) {
+        this.startingTime = staTime;
     }
     public Timestamp getStartingTime() {
         return startingTime;
     }
-    public void setStoppingTime(Timestamp soTime) {
-        this.stoppingTime = soTime;
+    public void setStoppingTime(Timestamp stoTime) {
+        this.stoppingTime = stoTime;
     }
     public Timestamp getStoppingTime() {
         return stoppingTime;
