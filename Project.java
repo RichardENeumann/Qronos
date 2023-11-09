@@ -1,10 +1,10 @@
 public class Project {
     private String projectName;
-    private short timeSpent;
+    private int timeSpent;
     private Timestamp startingTime;
     private Timestamp stoppingTime;
 
-    public Project(String pName, short tSpent) {
+    public Project(String pName, int tSpent) {
         this.projectName = pName;
         this.timeSpent = tSpent;
     }
@@ -14,10 +14,10 @@ public class Project {
     public String getProjectName() {
         return projectName;
     }
-    public void setTimeSpent(short tSpent) {
+    public void setTimeSpent(int tSpent) {
         this.timeSpent = tSpent;
     }
-    public short getTimeSpent() {
+    public int getTimeSpent() {
         return timeSpent;
     }
     public void setStartingTime(Timestamp saTime) {

@@ -4,8 +4,8 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.List;
 
- 
 public class Qronos extends JFrame {
 
     public Qronos() {
@@ -48,14 +48,11 @@ public class Qronos extends JFrame {
             }
         });
 
+        setVisible(true);
+        
     }
+
     public static void main(String... args) {
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                Qronos mainFrame = new Qronos();
-                mainFrame.setVisible(true);
-            }
-       });
+        Qronos mainFrame = new Qronos();
     }
 }
