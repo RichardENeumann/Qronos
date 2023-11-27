@@ -2,15 +2,15 @@
 
 <QronosLog>
     <entry>
-        <projectName>GeorgJost.de</projectName>
+        <projectName>Project1</projectName>
         <timeSpent>1440</timeSpent>
     </entry>
     <entry>
-        <projectName>GJHochzeiten</projectName>
+        <projectName>Project2</projectName>
         <timeSpent>0</timeSpent>
     </entry>
     <entry>
-        <projectName>Osteopath</projectName>
+        <projectName>Project3</projectName>
         <timeSpent>120</timeSpent>
     <entry>
 </QronosLog>
